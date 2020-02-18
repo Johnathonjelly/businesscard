@@ -28,21 +28,23 @@ class MyApp extends StatelessWidget {
                     fontSize: 40.0,
                     fontFamily: 'Pacifico'),
               ),
-              Text(
-                'Flutter Developer'.toUpperCase(),
-                style: TextStyle(
-                    color: Colors.teal[200],
-                    fontSize: 15.0,
-                    fontFamily: 'SourceSansPro',
-                    letterSpacing: 2.5),
-              ),
-              SizedBox(height: 10.0),
               Padding(
-                padding: const EdgeInsets.all(25.0),
+                padding: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 5.0),
+                child: Text(
+                  'Flutter Developer'.toUpperCase(),
+                  style: TextStyle(
+                      color: Colors.teal[200],
+                      fontSize: 15.0,
+                      fontFamily: 'SourceSansPro',
+                      letterSpacing: 2.5),
+                ),
+              ),
+//              SizedBox(height: 1.0),
+              Padding(
+                padding: const EdgeInsets.all(15.0),
                 child: Card(
                   color: Colors.white,
-                  margin:
-                      EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                  margin: EdgeInsets.symmetric(vertical: 0.0, horizontal: 25.0),
                   child: ListTile(
                     leading: Icon(Icons.phone),
                     title: Text(
@@ -56,13 +58,12 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(height: 1.0),
+//              SizedBox(height: 1.0),
               Padding(
-                padding: const EdgeInsets.all(25.0),
+                padding: const EdgeInsets.all(15.0),
                 child: Card(
                   color: Colors.white,
-                  margin:
-                      EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                  margin: EdgeInsets.symmetric(vertical: 0.0, horizontal: 25.0),
                   child: ListTile(
                     leading: Icon(Icons.email),
                     title: Text(
