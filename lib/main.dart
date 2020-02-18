@@ -39,11 +39,16 @@ class MyApp extends StatelessWidget {
                       letterSpacing: 2.5),
                 ),
               ),
-//              SizedBox(height: 1.0),
+              SizedBox(
+                height: 25.0,
+                width: 150.0,
+                child: Divider(
+                  color: Colors.teal.shade100,
+                ),
+              ),
               Padding(
                 padding: const EdgeInsets.all(15.0),
                 child: Card(
-                  color: Colors.white,
                   margin: EdgeInsets.symmetric(vertical: 0.0, horizontal: 25.0),
                   child: ListTile(
                     leading: Icon(Icons.phone),
@@ -62,7 +67,6 @@ class MyApp extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(15.0),
                 child: Card(
-                  color: Colors.white,
                   margin: EdgeInsets.symmetric(vertical: 0.0, horizontal: 25.0),
                   child: ListTile(
                     leading: Icon(Icons.email),
