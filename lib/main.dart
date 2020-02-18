@@ -37,15 +37,15 @@ class MyApp extends StatelessWidget {
                     letterSpacing: 2.5),
               ),
               SizedBox(height: 10.0),
-              Container(
-                color: Colors.white,
-                padding: EdgeInsets.all(10.0),
-                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                child: Row(
-                  children: <Widget>[
-                    Icon(Icons.phone, color: Colors.teal),
-                    SizedBox(width: 10.0),
-                    Text(
+              Padding(
+                padding: const EdgeInsets.all(25.0),
+                child: Card(
+                  color: Colors.white,
+                  margin:
+                      EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                  child: ListTile(
+                    leading: Icon(Icons.phone),
+                    title: Text(
                       '+1 541 226 4801',
                       style: TextStyle(
                         fontFamily: 'SourceSansPro',
@@ -53,19 +53,19 @@ class MyApp extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                  ],
+                  ),
                 ),
               ),
               SizedBox(height: 1.0),
-              Container(
-                color: Colors.white,
-                padding: EdgeInsets.all(10.0),
-                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                child: Row(
-                  children: <Widget>[
-                    Icon(Icons.email, color: Colors.teal),
-                    SizedBox(width: 10.0),
-                    Text(
+              Padding(
+                padding: const EdgeInsets.all(25.0),
+                child: Card(
+                  color: Colors.white,
+                  margin:
+                      EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                  child: ListTile(
+                    leading: Icon(Icons.email),
+                    title: Text(
                       'southworthjohnathon@gmail.com',
                       style: TextStyle(
                         fontFamily: 'SourceSansPro',
@@ -73,7 +73,7 @@ class MyApp extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                  ],
+                  ),
                 ),
               ),
             ],
